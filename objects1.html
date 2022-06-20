@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        
+
+
+          function Cars( brand,model,price)
+          {
+               this.brand = brand;
+               this.model = model;
+               this.price = price;
+               this.teslaAutopilot = function()
+               {
+                   document.write("<h2> This car has autopilot</h2>");
+               }
+
+
+          }
+
+          var c1 = new Cars("Tesla","Model3",3500);
+          var c2 = new Cars("Tesla-S","Mode P",2500);
+          c1.teslaAutopilot();
+          document.write("<h2>" + c2.brand + c2.model + c2.price +"</h2>");
+
+
+
+    </script>
+   
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+    <script type="text/javascript">
+
+        function validate()
+        {
+            var Username = document.getElementById("uname").value;
+            var regx = /E00/;
+            if(regx.test(Username))
+            {
+                alert("valid user name");
+            }else{
+
+                alert("invalid user name");
+                document.getElementById("lbluser").style.visibility="visible";
+            }
+        }
+    
+    </script>
+
+</head>
+<body>
+    <form action="message.html">
+        <input id="uname" placeholder="Username" type="text" /><br>
+        <label id = "lbluser" style = "color: red; visibility:hidden ">Invalid Username</label><br>
+        <button onclick="validate()" type="button" > Submit </button>
+        
+
+    </form>
+    
+</body>
+</html>

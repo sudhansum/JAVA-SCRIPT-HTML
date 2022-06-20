@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations in JavaScript</title>
+    <script type="text/javascript">
+
+        function validate()
+        {
+            var username = document.getElementById("UserName");
+            var password = document.getElementById("password");
+           if(username.value.trim()==""|| password.value=="")
+           {
+               alert("No blank values");
+               return false;
+           }else
+            { 
+               return true ;
+            }
+
+
+        }
+    
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()"  action="message.html">
+      <input id="UserName" placeholder="username" type="text"<!--required-->/> <br><br>
+      <input id="password" placeholder="Password" type="password"<!--required--> />
+
+      <br> <br>
+
+      <button onclick ="validate()" type="submit"> Submit</button> 
+
+<!--required is the inbuilt feature of the HTML and asks for the fields to be filled-->
+
+
+    </form>
+    
+</body>
+</html>

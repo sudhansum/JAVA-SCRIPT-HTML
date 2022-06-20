@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Validation</title>
+    <script type="text/javascript">
+
+        function validate()
+        {    var text = document.getElementById("text1").value;
+            var regx=/^[7-9]\d{9}$/;
+
+            if(regx.test(text))
+            {
+                document.getElementById("lbtext").innerHTML = "valid";
+                document.getElementById("lbtext").style.visibility="visible";
+                document.getElementById("lbtext").style.color="green";
+            }
+            else
+            {
+
+                document.getElementById("lbtext").innerHTML = "invalid";
+                document.getElementById("lbtext").style.visibility="visible";
+                document.getElementById("lbtext").style.color="red";
+            }
+        }
+ 
+    </script>
+
+</head>
+<body>
+    <form action="message.html">
+        <input id="text1" placeholder="CellPhone" type="text" /><br>
+        <label id = "lbtext" style = "color: red; visibility:hidden ">Invalid Username</label><br>
+        <button onclick="validate()" type="button" > Submit </button>
+        
+
+    </form> 
+</body>
+</html>
+
+
+	
+<!-- /* . :Has one of the following meanings:
+
+Matches any single character except line terminators: \n, \r, \u2028 or \u2029.
+For example, /.y/ matches "my" and "ay", but not "yes", in "yes make my day".
+Inside a character set, the dot loses its special meaning and matches a literal dot.
+Note that the m multiline flag doesn't change the dot behavior. So to match a pattern across multiple lines,
+the character set [^] can be used — it will match any character including newlines.
+ES2018 added the s "dotAll" flag, which allows the dot to also match line terminators.
+
+\d:Matches any digit (Arabic numeral). Equivalent to [0-9]. For example, /\d/ or /[0-9]/ matches "2" in "B2
+is the suite number".
+
+\D:Matches any character that is not a digit (Arabic numeral). Equivalent to [^0-9].
+For example, /\D/ or /[^0-9]/ matches "B" in "B2 is the suite number".
+
+\w:Matches any alphanumeric character from the basic Latin alphabet, including 
+the underscore. Equivalent to [A-Za-z0-9_]. For example, /\w/ matches "a" in "apple", "5" in "$5.28", and "3" in "3D".
+
+\W:Matches any character that is not a word character from the basic Latin alphabet. 
+Equivalent to [^A-Za-z0-9_]. For example, /\W/ or /[^A-Za-z0-9_]/ matches "%" in "50%". */ -->

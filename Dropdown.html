@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <script type="text/javascript">
+
+        function fn1()
+        {
+                var select= document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value)
+               
+
+        }
+    
+    </script>
+</head>
+<body>
+    <select id = "selectbox">
+        <option value="Simple Snippets">Simple Snippets </option>
+        <option  value="Study"> Study</option>
+        <option value="MKBHD"> MKBHD</option>
+    </select><br>
+    <button onclick="fn1()"> Click Me</button>
+</body>
+</html>

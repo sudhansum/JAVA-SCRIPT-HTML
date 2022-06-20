@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--setTimeout-used to exec a statement once after an interval-->
+    <!--clearTimeout to stop the settime from counting-->
+    <script type="text/javascript">
+            var ID=0;
+        function printMsg()
+        {
+            document.getElementById("op").innerHTML="5 seconds";
+        }
+        function start()
+        {
+                window.setTimeout(printMsg,5000);
+
+        }
+        function stop()
+        {
+             window.clearTimeout(ID);
+        }
+    
+    </script>
+
+</head>
+<body>
+     <button  onclick = "start()" id="btnAdd"> Start</button>
+     <h2 id = "op"> Some Text </h2> 
+     <button onclick = "stop()" id= "btnStop"> Stop </button>
+</body>
+</html>
